@@ -1,0 +1,133 @@
+.exercise-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--light-blue), var(--teal));
+}
+
+.exercise-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.type-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exercise-content {
+  padding: 20px;
+}
+
+.exercise-content h3 {
+  color: var(--dark-blue);
+  margin: 0 0 15px 0;
+  font-size: 1.25rem;
+}
+
+.exercise-meta {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.body-parts,
+.departments {
+  margin-bottom: 10px;
+}
+
+.body-parts strong,
+.departments strong {
+  color: var(--dark-blue);
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.body-parts p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.dept-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dept-tag {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+.details-btn {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.details-btn:hover {
+  background-color: #2399d1;
+}
+
+.details-expanded {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.video-placeholder {
+  background-color: var(--light-blue);
+  border: 2px dashed var(--primary-blue);
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.video-placeholder p {
+  margin: 0;
+  font-weight: 500;
+}
